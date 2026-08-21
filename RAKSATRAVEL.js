@@ -127,3 +127,61 @@ burger.addEventListener('click', () => {
   navLinks.style.display = isOpen ? 'none' : 'flex';
   navLinks.style.cssText += isOpen ? '' : 'position:absolute; top:100%; left:0; right:0; background:#FFFDF9; flex-direction:column; padding:20px 28px; gap:16px; border-bottom:1px solid rgba(11,41,66,0.14);';
 });
+/* =========================================================
+   DARK / LIGHT MODE
+   ========================================================= */
+
+(function () {
+
+    const themeToggle = document.getElementById("themeToggle");
+
+    if (!themeToggle) return;
+
+    function updateThemeButton() {
+
+        const isDark =
+            document.documentElement.classList.contains("dark-mode");
+
+        if (isDark) {
+            themeToggle.textContent = "☀️";
+            themeToggle.setAttribute(
+                "aria-label",
+                "Aktifkan Light Mode"
+            );
+        } else {
+            themeToggle.textContent = "🌙";
+            themeToggle.setAttribute(
+                "aria-label",
+                "Aktifkan Dark Mode"
+            );
+        }
+    }
+
+
+    /* Baca tema yang tersimpan */
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark-mode");
+    } else {
+        document.documentElement.classList.remove("dark-mode");
+    }
+
+    updateThemeButton();
+
+
+    /* Tombol */
+    themeToggle.addEventListener("click", function () {
+
+        const isDark =
+            document.documentElement.classList.toggle("dark-mode");
+
+        localStorage.setItem(
+            "theme",
+            isDark ? "dark" : "light"
+        );
+
+        updateThemeButton();
+    });
+
+})();
