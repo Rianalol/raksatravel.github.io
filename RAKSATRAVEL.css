@@ -175,3 +175,487 @@ footer{background:var(--navy-deep); padding:60px 0 26px; margin-top:20px;}
 @media (prefers-reduced-motion: reduce){
   *{animation:none !important; transition:none !important;}
 }
+/* =========================================================
+   RAKSA TRAVEL — FINAL DARK / LIGHT MODE
+   ========================================================= */
+
+/* =========================================================
+   LIGHT MODE DEFAULT
+   ========================================================= */
+
+:root {
+    --navy: #0B2942;
+    --navy-deep: #071B2C;
+    --teal: #0E7C7B;
+
+    --sand: #F6F1E4;
+    --sand-dark: #EDE4CE;
+
+    --amber: #E8A33D;
+    --coral: #E8664A;
+
+    --ink: #10202C;
+    --paper: #FFFDF9;
+
+    --line: rgba(11, 41, 66, 0.14);
+
+    --shadow:
+        0 20px 50px -20px rgba(7, 27, 44, 0.35);
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+html.dark-mode {
+
+    /* Background utama */
+    --sand: #0A1118;
+
+    /* Background card / section */
+    --paper: #121B24;
+
+    /* Background secondary */
+    --sand-dark: #1B2731;
+
+    /* Heading */
+    --navy-deep: #F4F8FB;
+
+    /* Text */
+    --ink: #E8EEF2;
+
+    /* Warna navy biasa */
+    --navy: #173A55;
+
+    /* Border */
+    --line: rgba(255, 255, 255, 0.12);
+
+    /* Shadow */
+    --shadow:
+        0 20px 50px -20px rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================================================
+   BODY
+   ========================================================= */
+
+html.dark-mode body {
+    background: var(--sand) !important;
+    color: var(--ink) !important;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4 {
+    color: var(--navy-deep) !important;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+html.dark-mode header {
+    background: rgba(10, 17, 24, 0.94) !important;
+    border-bottom-color: var(--line) !important;
+}
+
+
+/* Logo */
+html.dark-mode .logo {
+    color: #FFFFFF !important;
+}
+
+
+/* Navigation */
+html.dark-mode .nav-links a {
+    color: #D7E0E7 !important;
+}
+
+html.dark-mode .nav-links a:hover {
+    color: var(--teal) !important;
+}
+
+
+/* Burger */
+html.dark-mode .burger span {
+    background: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+html.dark-mode .hero-desc {
+    color: #C2CED7 !important;
+}
+
+html.dark-mode .hero-tagline {
+    color: #2CB8B5 !important;
+}
+
+html.dark-mode .mini-badge {
+    background: var(--paper) !important;
+    color: #EDF4F8 !important;
+    border-color: var(--line) !important;
+}
+
+
+/* Hero card */
+html.dark-mode .hero-card {
+    background: var(--paper) !important;
+    color: var(--ink) !important;
+    border-color: var(--line) !important;
+    box-shadow: var(--shadow) !important;
+}
+
+html.dark-mode .agent-title {
+    color: #B7C5CF !important;
+}
+
+html.dark-mode .agent-stats {
+    border-top-color: var(--line) !important;
+}
+
+html.dark-mode .agent-stats b {
+    color: #FFFFFF !important;
+}
+
+html.dark-mode .agent-stats span {
+    color: #91A1AD !important;
+}
+
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+html.dark-mode .btn-ghost-dark {
+    color: #FFFFFF !important;
+    border-color: rgba(255,255,255,0.2) !important;
+}
+
+html.dark-mode .btn-ghost-dark:hover {
+    background: rgba(255,255,255,0.06) !important;
+    border-color: rgba(255,255,255,0.45) !important;
+}
+
+
+/* =========================================================
+   SECTION HEAD
+   ========================================================= */
+
+html.dark-mode .section-head p {
+    color: #B9C6CF !important;
+}
+
+
+/* =========================================================
+   ABOUT CARD
+   ========================================================= */
+
+html.dark-mode .about-card {
+    background: var(--paper) !important;
+    border-color: var(--line) !important;
+    color: var(--ink) !important;
+}
+
+html.dark-mode .about-card p {
+    color: #BBC8D1 !important;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+   ========================================================= */
+
+html.dark-mode .service-card {
+    background: var(--paper) !important;
+    border-color: var(--line) !important;
+    color: var(--ink) !important;
+}
+
+html.dark-mode .service-card h4 {
+    color: #FFFFFF !important;
+}
+
+html.dark-mode .service-card p {
+    color: #BCC8D1 !important;
+}
+
+
+/* icon service */
+html.dark-mode .service-icon {
+    background: var(--sand-dark) !important;
+}
+
+
+/* =========================================================
+   WHY SECTION
+   ========================================================= */
+
+html.dark-mode .check-list li {
+    color: #C3CED6 !important;
+}
+
+html.dark-mode .check-list li b {
+    color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   STEP CARD
+   ========================================================= */
+
+html.dark-mode .step-card {
+    background: var(--paper) !important;
+    border-color: var(--line) !important;
+    color: var(--ink) !important;
+}
+
+html.dark-mode .step-card h4 {
+    color: #FFFFFF !important;
+}
+
+html.dark-mode .step-card p {
+    color: #BDC9D2 !important;
+}
+
+html.dark-mode .step-no {
+    color: rgba(255,255,255,0.08) !important;
+}
+
+
+/* =========================================================
+   TESTIMONI
+   ========================================================= */
+
+html.dark-mode .test-card {
+    background: var(--paper) !important;
+    border-color: var(--line) !important;
+    color: var(--ink) !important;
+}
+
+html.dark-mode .test-card p {
+    color: #C0CCD5 !important;
+}
+
+html.dark-mode .test-name {
+    color: #FFFFFF !important;
+}
+
+html.dark-mode .test-role {
+    color: #8FA0AC !important;
+}
+
+
+/* =========================================================
+   PARTNER STRIP
+   ========================================================= */
+
+html.dark-mode .partner-strip {
+    background: #050A0E !important;
+}
+
+html.dark-mode .partner-label {
+    color: rgba(255,255,255,0.55) !important;
+}
+
+html.dark-mode .partner-chip {
+    color: rgba(255,255,255,0.75) !important;
+    border-color: rgba(255,255,255,0.18) !important;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+html.dark-mode .contact-info {
+    background: var(--paper) !important;
+    border-color: var(--line) !important;
+}
+
+html.dark-mode .contact-row {
+    border-bottom-color: var(--line) !important;
+}
+
+html.dark-mode .contact-ico {
+    background: var(--sand-dark) !important;
+}
+
+html.dark-mode .contact-row div span {
+    color: #8FA0AC !important;
+}
+
+html.dark-mode .contact-row div b {
+    color: #FFFFFF !important;
+}
+
+html.dark-mode .edit-note {
+    color: #8FA0AC !important;
+}
+
+html.dark-mode .edit-note code {
+    background: var(--sand-dark) !important;
+    color: #DCE7ED !important;
+}
+
+
+/* =========================================================
+   FORM
+   ========================================================= */
+
+html.dark-mode .contact-form {
+    background: var(--paper) !important;
+    border-color: var(--line) !important;
+}
+
+html.dark-mode .contact-form h4 {
+    color: #FFFFFF !important;
+}
+
+html.dark-mode .form-row label {
+    color: #35C3C0 !important;
+}
+
+html.dark-mode .form-row input,
+html.dark-mode .form-row textarea {
+    background: #0E161E !important;
+    color: #F4F8FB !important;
+    border-color: var(--line) !important;
+}
+
+html.dark-mode .form-row input::placeholder,
+html.dark-mode .form-row textarea::placeholder {
+    color: #71818D !important;
+}
+
+html.dark-mode .form-row input:focus,
+html.dark-mode .form-row textarea:focus {
+    background: #101A23 !important;
+    color: #FFFFFF !important;
+    border-color: var(--teal) !important;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+html.dark-mode footer {
+    background: #050A0E !important;
+}
+
+html.dark-mode .foot-grid h5 {
+    color: #FFFFFF !important;
+}
+
+html.dark-mode .foot-grid a {
+    color: #B9C6CF !important;
+}
+
+html.dark-mode .foot-grid p {
+    color: #8798A5 !important;
+}
+
+html.dark-mode .foot-bottom {
+    color: #778894 !important;
+    border-top-color: rgba(255,255,255,0.08) !important;
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+html.dark-mode .nav-links {
+    background: #121B24 !important;
+}
+
+html.dark-mode .nav-links a {
+    color: #E5EDF2 !important;
+}
+
+
+/* =========================================================
+   THEME BUTTON
+   ========================================================= */
+
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--paper);
+
+    color: var(--ink);
+
+    border: 1px solid var(--line);
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.08);
+}
+
+
+/* =========================================================
+   INLINE BACKGROUND FIX
+   Ini penting karena HTML kamu memakai:
+   background:var(--paper)
+   ========================================================= */
+
+html.dark-mode section[style*="background:var(--paper)"] {
+    background: var(--paper) !important;
+}
+
+
+/* =========================================================
+   SMOOTH TRANSITION
+   ========================================================= */
+
+body,
+header,
+section,
+.hero-card,
+.about-card,
+.service-card,
+.step-card,
+.test-card,
+.contact-info,
+.contact-form,
+.mini-badge,
+.service-icon,
+.contact-ico,
+.form-row input,
+.form-row textarea {
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
