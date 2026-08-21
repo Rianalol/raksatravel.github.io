@@ -14,7 +14,7 @@ const AGENT_CONFIG = {
   whatsappDisplay: "0821-5304-3601", // nomor yang ditampilkan ke pengunjung
   email: "santi1005@gamil.com",
   instagram: "@raksatravel.id",
-  address: "Alamat kantor / area layanan Anda",
+  address: "JL. TERMINAL LAMA EXPO WAENA, KEC HERAM JAYAPURA",
   hours: "Setiap hari, 08.00 – 21.00 WIB",
 
   clients: 850,     // jumlah pelanggan (untuk animasi statistik)
