@@ -127,7 +127,6 @@ burger.addEventListener('click', () => {
   navLinks.style.display = isOpen ? 'none' : 'flex';
   navLinks.style.cssText += isOpen ? '' : 'position:absolute; top:100%; left:0; right:0; background:#FFFDF9; flex-direction:column; padding:20px 28px; gap:16px; border-bottom:1px solid rgba(11,41,66,0.14);';
 });
-
 /* =========================================================
    DARK / LIGHT MODE
    ========================================================= */
