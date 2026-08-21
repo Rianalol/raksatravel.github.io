@@ -48,9 +48,7 @@ function applyConfig(){
   });
 
   // avatar inisial dari nama
-  const initials = AGENT_CONFIG.name.trim().split(/\s+/).map(w => w[0]).slice(0,2).join('').toUpperCase();
-  const avatarEl = document.getElementById('agentInitials');
-  if(avatarEl) avatarEl.textContent = initials || 'RT';
+  // (avatar sekarang pakai gambar logo, bukan inisial teks)
 }
 applyConfig();
 
