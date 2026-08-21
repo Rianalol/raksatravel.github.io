@@ -41,6 +41,7 @@ header{position:sticky; top:0; z-index:100; background:rgba(255,253,249,0.92); b
 .nav{display:flex; align-items:center; justify-content:space-between; padding:18px 0; transition:padding .3s ease;}
 header.shrink .nav{padding:12px 0;}
 .logo{display:flex; align-items:center; gap:9px; color:var(--navy-deep); font-family:'Fraunces',serif; font-weight:700; font-size:21px;}
+.logo-img{height:46px; width:46px; object-fit:cover; border-radius:50%; box-shadow:0 0 0 2px rgba(255,255,255,0.85);}
 .logo .dot{width:9px; height:9px; border-radius:50%; background:var(--amber);}
 .nav-links{display:flex; gap:32px; list-style:none;}
 .nav-links a{color:#3a4a56; font-size:14.5px; font-weight:600; transition:color .2s ease;}
@@ -62,8 +63,7 @@ header.shrink .nav{padding:12px 0;}
 .hero-card{background:var(--paper); border-radius:24px; box-shadow:var(--shadow); padding:36px 28px; text-align:center;}
 .agent-photo{position:relative; width:140px; height:140px; margin:0 auto 18px;}
 .agent-avatar{
-  width:140px; height:140px; border-radius:50%; background:linear-gradient(135deg,var(--navy),var(--teal));
-  display:flex; align-items:center; justify-content:center; color:var(--paper); font-family:'Fraunces',serif; font-size:44px; font-weight:700;
+  width:140px; height:140px; border-radius:50%; object-fit:cover;
   border:5px solid var(--sand-dark);
 }
 .float-badge{position:absolute; width:38px; height:38px; border-radius:50%; background:var(--amber); display:flex; align-items:center; justify-content:center; font-size:17px; box-shadow:var(--shadow);}
