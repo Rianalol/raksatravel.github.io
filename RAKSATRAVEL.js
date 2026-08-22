@@ -57,6 +57,16 @@ function applyConfig(){
 applyConfig();
 
 
+// ---------- KARTU DESTINASI -> BUKA WHATSAPP SESUAI TUJUAN ----------
+document.querySelectorAll('.dest-card[data-dest-msg]').forEach(el => {
+  const place = el.getAttribute('data-dest-msg');
+  const msg = encodeURIComponent(`Halo ${AGENT_CONFIG.name}, saya tertarik dengan tiket ke ${place}. Bisa dibantu cek jadwal dan harganya?`);
+  el.href = `https://wa.me/${AGENT_CONFIG.whatsapp}?text=${msg}`;
+  el.target = "_blank";
+  el.rel = "noopener";
+});
+
+
 // ---------- FORM KONTAK -> BUKA WHATSAPP ----------
 const contactForm = document.getElementById('contactForm');
 if(contactForm){
