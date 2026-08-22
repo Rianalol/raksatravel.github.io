@@ -14,7 +14,7 @@ const AGENT_CONFIG = {
   address: "JL. TERMINAL LAMA EXPO WAENA, KEC HERAM JAYAPURA",
   hours: "Setiap hari, 08.00 – 21.00 WIB",
 
-  clients: 850,     // jumlah pelanggan (untuk animasi statistik)
+  clients: 1000,     // jumlah pelanggan (untuk animasi statistik)
   rating: 4.9        // rating (untuk animasi statistik)
 };
 /* ========================================================= */
