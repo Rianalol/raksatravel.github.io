@@ -91,6 +91,38 @@ section.pad{padding:90px 0;}
 .about-card h4{font-size:18px; margin-bottom:8px;}
 .about-card p{font-size:14px; color:#5a6b78;}
 
+/* ---------- DESTINASI FAVORIT ---------- */
+.dest-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+.dest-card{
+  position:relative; display:block; height:340px; border-radius:20px; overflow:hidden;
+  box-shadow:0 14px 34px -18px rgba(11,41,66,0.35);
+  transition:transform .4s ease, box-shadow .4s ease;
+}
+.dest-card:hover, .dest-card:focus-visible{transform:translateY(-8px) scale(1.015); box-shadow:0 26px 46px -16px rgba(11,41,66,0.5);}
+.dest-card img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  transition:transform .6s ease, filter .6s ease;
+}
+.dest-card:hover img, .dest-card:focus-visible img{transform:scale(1.08); filter:brightness(0.7) saturate(1.15);}
+.dest-overlay{
+  position:absolute; inset:0; display:flex; flex-direction:column; justify-content:flex-end; padding:22px;
+  background:linear-gradient(180deg, rgba(7,27,44,0) 40%, rgba(7,27,44,0.9) 100%);
+  color:var(--paper); transition:background .4s ease;
+}
+.dest-card:hover .dest-overlay, .dest-card:focus-visible .dest-overlay{background:linear-gradient(180deg, rgba(14,124,123,0.1) 15%, rgba(7,27,44,0.95) 100%);}
+.dest-tag{font-family:'Space Mono',monospace; font-size:10.5px; text-transform:uppercase; letter-spacing:.1em; color:var(--amber); margin-bottom:4px;}
+.dest-overlay h3{color:var(--paper); font-size:21px; margin-bottom:0;}
+.dest-overlay p{
+  font-size:12.5px; line-height:1.5; color:rgba(255,253,249,0.85); max-height:0; opacity:0; overflow:hidden;
+  transition:max-height .4s ease, opacity .35s ease, margin-top .4s ease;
+}
+.dest-card:hover .dest-overlay p, .dest-card:focus-visible .dest-overlay p{max-height:120px; opacity:1; margin-top:8px;}
+.dest-cta{
+  font-size:12px; font-weight:800; color:var(--amber); opacity:0; transform:translateY(6px);
+  transition:opacity .3s ease, transform .3s ease; margin-top:8px;
+}
+.dest-card:hover .dest-cta, .dest-card:focus-visible .dest-cta{opacity:1; transform:translateY(0);}
+
 /* ---------- SERVICES ---------- */
 .service-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
 .service-card{background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:28px 22px; transition:transform .3s ease, box-shadow .3s ease;}
@@ -165,17 +197,20 @@ footer{background:var(--navy-deep); padding:60px 0 26px; margin-top:20px;}
 
 @media (max-width: 980px){
   .hero-grid, .why-grid, .contact-grid{grid-template-columns:1fr;}
-  .about-grid, .service-grid, .step-grid{grid-template-columns:repeat(2,1fr);}
+  .about-grid, .service-grid, .step-grid, .dest-grid{grid-template-columns:repeat(2,1fr);}
   .test-grid{grid-template-columns:1fr;}
   .foot-grid{grid-template-columns:1fr 1fr;}
   .nav-links{display:none;}
   .burger{display:flex;}
 }
 @media (max-width:600px){
-  .about-grid, .service-grid, .step-grid{grid-template-columns:1fr;}
+  .about-grid, .service-grid, .step-grid, .dest-grid{grid-template-columns:1fr;}
+  .dest-overlay p{max-height:120px; opacity:1; margin-top:8px;}
+  .dest-cta{opacity:1; transform:translateY(0);}
 }
 @media (prefers-reduced-motion: reduce){
   *{animation:none !important; transition:none !important;}
+  .dest-card:hover .overlay p, .dest-card:hover .dest-overlay p{max-height:none; opacity:1;}
 }
 /* =========================================================
    RAKSA TRAVEL — FINAL DARK / LIGHT MODE
