@@ -1,8 +1,5 @@
 /* =========================================================
-   ⚙️  GANTI DATA DI BAWAH INI SESUAI IDENTITAS ANDA
-   Semua elemen di halaman (kontak, nama, badge WA, dll)
-   otomatis mengambil isinya dari sini — cukup ubah di satu
-   tempat ini saja.
+
    ========================================================= */
 const AGENT_CONFIG = {
   name: "RAKSA TRAVEL",                          // nama lengkap Anda
@@ -12,8 +9,8 @@ const AGENT_CONFIG = {
 
   whatsapp: "6282153043601",       // format 62xxxxxxxxxxx (tanpa + atau 0 di depan)
   whatsappDisplay: "0821-5304-3601", // nomor yang ditampilkan ke pengunjung
-  email: "santi1005@gmail.com",
-  instagram: "@raksatravel.id",
+  email: "santisalmi1005@gmail.com",
+  instagram: "@raksatraveljayapura",
   address: "JL. TERMINAL LAMA EXPO WAENA, KEC HERAM JAYAPURA",
   hours: "Setiap hari, 08.00 – 21.00 WIB",
 
