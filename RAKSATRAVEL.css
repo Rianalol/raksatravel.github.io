@@ -135,6 +135,8 @@ section.pad{padding:90px 0;}
 .contact-grid{display:grid; grid-template-columns:1fr 1fr; gap:30px;}
 .contact-info{background:var(--paper); border:1px solid var(--line); border-radius:20px; padding:30px;}
 .contact-row{display:flex; gap:16px; align-items:flex-start; padding:14px 0; border-bottom:1px dashed var(--line);}
+a.contact-row{cursor:pointer; border-radius:10px; transition:background .2s ease, padding-left .2s ease;}
+a.contact-row:hover{background:var(--sand); padding-left:8px;}
 .contact-row:last-of-type{border-bottom:none;}
 .contact-ico{width:38px; height:38px; border-radius:10px; background:var(--sand-dark); display:flex; align-items:center; justify-content:center; font-size:16px;}
 .contact-row div span{display:block; font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:#7a8896; font-weight:700;}
