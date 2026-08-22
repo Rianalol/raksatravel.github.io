@@ -1,5 +1,4 @@
 /* =========================================================
-
    ========================================================= */
 const AGENT_CONFIG = {
   name: "RAKSA TRAVEL",                          // nama lengkap Anda
@@ -11,6 +10,8 @@ const AGENT_CONFIG = {
   whatsappDisplay: "0821-5304-3601", // nomor yang ditampilkan ke pengunjung
   email: "santisalmi1005@gmail.com",
   instagram: "@raksatraveljayapura",
+  facebook: "https://www.facebook.com/share/1D4YpqqqUg/",   // ganti dengan link Facebook bisnis Anda
+  facebookDisplay: "@RaksaTravel",                  // nama yang ditampilkan di kartu kontak
   address: "JL. TERMINAL LAMA EXPO WAENA, KEC HERAM JAYAPURA",
   hours: "Setiap hari, 08.00 – 21.00 WIB",
 
@@ -40,6 +41,12 @@ function applyConfig(){
     } else if(key === 'instagram'){
       const handle = AGENT_CONFIG.instagram.replace('@','');
       el.href = `https://instagram.com/${handle}`;
+      el.target = "_blank";
+    } else if(key === 'facebook'){
+      el.href = AGENT_CONFIG.facebook;
+      el.target = "_blank";
+    } else if(key === 'address'){
+      el.href = `https://www.google.com/maps/place/Kompleks+Asri+Residence/@-2.5959642,140.6293383,21z/data=!4m6!3m5!1s0x686cf59ac6da1065:0x11881a1f2d0d7adb!8m2!3d-2.5960774!4d140.6294117!16s%2Fg%2F11j7vj_dj_?entry=ttu&g_ep=EgoyMDI2MDgxOS4wIKXMDSoASAFQAw%3D%3D=${encodeURIComponent(AGENT_CONFIG.address)}`;
       el.target = "_blank";
     }
   });
